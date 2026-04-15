@@ -1,13 +1,531 @@
 <!DOCTYPE html>
-    <html>
-    <head>
-      <meta charset='utf-8'>
-      <meta name='viewport' content='width=device-width'>
-      <title>Privacy Policy</title>
-      <style> body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; padding:1em; } </style>
-    </head>
-    <body>
-    <strong>Privacy Policy</strong><p>This privacy policy applies to the Enber app (hereby referred to as "Application") for mobile devices that was created by Ali Raza (hereby referred to as "Service Provider") as a Free service. This service is intended for use "AS IS".</p><br><strong>Information Collection and Use</strong><p>The Application collects information when you download and use it. This information may include information such as </p><ul><li>Your device's Internet Protocol address (e.g. IP address)</li><li>The pages of the Application that you visit, the time and date of your visit, the time spent on those pages</li><li>The time spent on the Application</li><li>The operating system you use on your mobile device</li></ul><p></p><br><p>The Application does not gather precise information about the location of your mobile device.</p><!----><br><p>The Application does not use Artificial Intelligence (AI) technologies to process your data or provide features.</p><br><p>The Service Provider may use the information you provided to contact you from time to time to provide you with important information, required notices and marketing promotions.</p><br><p>For a better experience, while using the Application, the Service Provider may require you to provide us with certain personally identifiable information, including but not limited to aliraza0423@gmail.com. The information that the Service Provider request will be retained by them and used as described in this privacy policy.</p><br><strong>Third Party Access</strong><p>Only aggregated, anonymized data is periodically transmitted to external services to aid the Service Provider in improving the Application and their service. The Service Provider may share your information with third parties in the ways that are described in this privacy statement.</p><div><br><p>Please note that the Application utilizes third-party services that have their own Privacy Policy about handling data. Below are the links to the Privacy Policy of the third-party service providers used by the Application:</p><ul><li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Google Analytics for Firebase</a></li></ul></div><br><p>The Service Provider may disclose User Provided and Automatically Collected Information:</p><ul><li>as required by law, such as to comply with a subpoena, or similar legal process;</li><li>when they believe in good faith that disclosure is necessary to protect their rights, protect your safety or the safety of others, investigate fraud, or respond to a government request;</li><li>with their trusted services providers who work on their behalf, do not have an independent use of the information we disclose to them, and have agreed to adhere to the rules set forth in this privacy statement.</li></ul><p></p><br><strong>Opt-Out Rights</strong><p>You can stop all collection of information by the Application easily by uninstalling it. You may use the standard uninstall processes as may be available as part of your mobile device or via the mobile application marketplace or network.</p><br><strong>Data Retention Policy</strong><p>The Service Provider will retain User Provided data for as long as you use the Application and for a reasonable time thereafter. If you'd like them to delete User Provided Data that you have provided via the Application, please contact them at aliraza0423@gmail.com and they will respond in a reasonable time.</p><br><strong>Children</strong><p>The Service Provider does not use the Application to knowingly solicit data from or market to children under the age of 13.</p><div><br><p>The Application does not address anyone under the age of 13. The Service Provider does not knowingly collect personally identifiable information from children under 13 years of age. In the case the Service Provider discover that a child under 13 has provided personal information, the Service Provider will immediately delete this from their servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact the Service Provider (aliraza0423@gmail.com) so that they will be able to take the necessary actions.</p></div><br><strong>Security</strong><p>The Service Provider is concerned about safeguarding the confidentiality of your information. The Service Provider provides physical, electronic, and procedural safeguards to protect information the Service Provider processes and maintains.</p><br><strong>Changes</strong><p>This Privacy Policy may be updated from time to time for any reason. The Service Provider will notify you of any changes to the Privacy Policy by updating this page with the new Privacy Policy. You are advised to consult this Privacy Policy regularly for any changes, as continued use is deemed approval of all changes.</p><br><p>This privacy policy is effective as of 2026-04-09</p><br><strong>Your Consent</strong><p>By using the Application, you are consenting to the processing of your information as set forth in this Privacy Policy now and as amended by us.</p><br><strong>Contact Us</strong><p>If you have any questions regarding privacy while using the Application, or have questions about the practices, please contact the Service Provider via email at aliraza0423@gmail.com.</p>
-    </body>
-    </html>
-      
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Enber</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f5f7fa;
+      color: #1a1a2e;
+      line-height: 1.7;
+      padding: 40px 16px 80px;
+    }
+
+    .card {
+      max-width: 780px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 16px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+
+    /* Header */
+    .header {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 60%, #0f3460 100%);
+      padding: 48px 40px 40px;
+      color: #ffffff;
+    }
+
+    .header .app-name {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #e94560;
+      margin-bottom: 10px;
+    }
+
+    .header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .header .meta {
+      font-size: 13px;
+      color: rgba(255,255,255,0.55);
+    }
+
+    .header .meta span {
+      margin-right: 20px;
+    }
+
+    /* Badges */
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 20px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 20px;
+      padding: 4px 12px;
+      font-size: 12px;
+      color: rgba(255,255,255,0.75);
+    }
+
+    .badge svg { flex-shrink: 0; }
+
+    /* Content */
+    .content {
+      padding: 40px;
+    }
+
+    /* Section */
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 2px solid #f0f2f5;
+    }
+
+    .section-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: #f0f4ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .section h2 {
+      font-size: 17px;
+      font-weight: 700;
+      color: #1a1a2e;
+    }
+
+    .section p {
+      font-size: 14.5px;
+      color: #444;
+      margin-bottom: 12px;
+    }
+
+    .section p:last-child { margin-bottom: 0; }
+
+    /* Lists */
+    ul.bullet {
+      list-style: none;
+      padding: 0;
+      margin: 12px 0;
+    }
+
+    ul.bullet li {
+      font-size: 14.5px;
+      color: #444;
+      padding: 6px 0 6px 22px;
+      position: relative;
+      border-bottom: 1px solid #f5f5f5;
+    }
+
+    ul.bullet li:last-child { border-bottom: none; }
+
+    ul.bullet li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 14px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #e94560;
+    }
+
+    /* Info box */
+    .info-box {
+      background: #f8faff;
+      border-left: 4px solid #4361ee;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 16px;
+      margin: 16px 0;
+      font-size: 14px;
+      color: #333;
+    }
+
+    .info-box strong { color: #1a1a2e; }
+
+    /* Warning box */
+    .warn-box {
+      background: #fff8f0;
+      border-left: 4px solid #f77f00;
+      border-radius: 0 8px 8px 0;
+      padding: 14px 16px;
+      margin: 16px 0;
+      font-size: 14px;
+      color: #333;
+    }
+
+    /* Opt-out steps */
+    .opt-out-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin: 16px 0;
+    }
+
+    @media (max-width: 500px) {
+      .opt-out-grid { grid-template-columns: 1fr; }
+    }
+
+    .opt-out-card {
+      background: #f8f9fc;
+      border-radius: 10px;
+      padding: 14px 16px;
+      font-size: 13.5px;
+      color: #333;
+    }
+
+    .opt-out-card .platform {
+      font-weight: 700;
+      font-size: 13px;
+      color: #1a1a2e;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .opt-out-card code {
+      display: block;
+      font-size: 12px;
+      color: #555;
+      background: #eeeff3;
+      border-radius: 6px;
+      padding: 6px 8px;
+      margin-top: 6px;
+      line-height: 1.6;
+      font-family: monospace;
+    }
+
+    /* Third-party links */
+    .link-list {
+      list-style: none;
+      padding: 0;
+      margin: 12px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .link-list li a {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #4361ee;
+      font-size: 14px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .link-list li a:hover { text-decoration: underline; }
+
+    /* Disclosure list */
+    ol.disclosure {
+      padding-left: 20px;
+      margin: 12px 0;
+    }
+
+    ol.disclosure li {
+      font-size: 14.5px;
+      color: #444;
+      margin-bottom: 8px;
+      padding-left: 4px;
+    }
+
+    /* Contact card */
+    .contact-card {
+      background: linear-gradient(135deg, #1a1a2e, #0f3460);
+      border-radius: 12px;
+      padding: 24px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-top: 8px;
+    }
+
+    .contact-card .icon {
+      width: 44px;
+      height: 44px;
+      background: rgba(233,69,96,0.25);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .contact-card .label {
+      font-size: 12px;
+      color: rgba(255,255,255,0.55);
+      margin-bottom: 4px;
+    }
+
+    .contact-card a {
+      color: #e94560;
+      font-weight: 600;
+      font-size: 15px;
+      text-decoration: none;
+    }
+
+    .contact-card a:hover { text-decoration: underline; }
+
+    /* Footer */
+    .footer {
+      text-align: center;
+      padding: 20px 40px 30px;
+      font-size: 12px;
+      color: #aaa;
+      border-top: 1px solid #f0f2f5;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card">
+
+  <!-- Header -->
+  <div class="header">
+    <div class="app-name">Enber App</div>
+    <h1>Privacy Policy</h1>
+    <div class="meta">
+      <span>Effective: April 15, 2026</span>
+      <span>Service Provider: Ali Raza</span>
+    </div>
+    <div class="badges">
+      <div class="badge">
+        <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+        Free Service
+      </div>
+      <div class="badge">
+        <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+        Mobile App
+      </div>
+      <div class="badge">
+        <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path stroke-linecap="round" d="M9 9h6M9 12h6M9 15h4"/></svg>
+        AdMob + Subscriptions
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+
+    <!-- 1. Information Collection -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#4361ee" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+        </div>
+        <h2>Information Collection and Use</h2>
+      </div>
+      <p>The Application collects information when you download and use it. This information may include:</p>
+      <ul class="bullet">
+        <li>Your device's Internet Protocol address (e.g. IP address)</li>
+        <li>The pages of the Application you visit, the time and date of your visit, the time spent on those pages</li>
+        <li>The time spent on the Application</li>
+        <li>The operating system you use on your mobile device</li>
+        <li>Your device's advertising identifier (e.g. IDFA on iOS, GAID on Android) for the purpose of serving personalized advertisements</li>
+      </ul>
+      <div class="info-box">
+        The Application does <strong>not</strong> gather precise information about the location of your mobile device, and does <strong>not</strong> use Artificial Intelligence (AI) technologies to process your data.
+      </div>
+      <p>The Service Provider may use the information you provided to contact you from time to time to provide important information, required notices and marketing promotions.</p>
+      <p>For a better experience, while using the Application, the Service Provider may require you to provide certain personally identifiable information. The information requested will be retained and used as described in this privacy policy.</p>
+    </div>
+
+    <!-- 2. Advertising -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#4361ee" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"/></svg>
+        </div>
+        <h2>Advertising (Google AdMob)</h2>
+      </div>
+      <p>The Application uses <strong>Google AdMob</strong>, a third-party advertising service provided by Google LLC, to display advertisements. AdMob may collect and use certain information from your device to serve personalized ads, including:</p>
+      <ul class="bullet">
+        <li>Advertising identifiers (IDFA / GAID)</li>
+        <li>IP address</li>
+        <li>Device information (model, OS version)</li>
+        <li>Usage data and interaction with ads</li>
+      </ul>
+      <p>You may opt out of personalized advertising at any time through your device settings:</p>
+      <div class="opt-out-grid">
+        <div class="opt-out-card">
+          <div class="platform">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#1a1a2e"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+            iOS
+          </div>
+          <code>Settings → Privacy &amp; Security → Tracking → disable "Allow Apps to Request to Track"</code>
+        </div>
+        <div class="opt-out-card">
+          <div class="platform">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="#1a1a2e"><path d="M17.523 15.341l-.623 1.08-1.08-.624a5.86 5.86 0 01-2.82.721 5.86 5.86 0 01-2.82-.72l-1.08.623-.624-1.08a5.86 5.86 0 01-.72-2.82 5.86 5.86 0 01.72-2.82l-.623-1.08 1.08-.624A5.86 5.86 0 0112 8a5.86 5.86 0 012.82.721l1.08-.624.624 1.08A5.86 5.86 0 0117.244 12a5.86 5.86 0 01-.721 2.82v.521zM12 4a8 8 0 100 16A8 8 0 0012 4z"/></svg>
+            Android
+          </div>
+          <code>Settings → Google → Ads → opt out of Ads Personalization</code>
+        </div>
+      </div>
+      <p>For more information on how Google uses data collected through AdMob, please review <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</p>
+    </div>
+
+    <!-- 3. Subscriptions -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#4361ee" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"/></svg>
+        </div>
+        <h2>Subscriptions and In-App Purchases</h2>
+      </div>
+      <p>The Application offers optional subscription plans that unlock premium features. Subscriptions are managed and processed through the respective platform's payment system:</p>
+      <ul class="bullet">
+        <li><strong>Apple App Store (iOS):</strong> Subscriptions are handled by Apple. Payment and billing information is collected and processed by Apple and is subject to Apple's Privacy Policy.</li>
+        <li><strong>Google Play Store (Android):</strong> Subscriptions are handled by Google. Payment and billing information is collected and processed by Google and is subject to Google's Privacy Policy.</li>
+      </ul>
+      <div class="info-box">
+        The Service Provider does <strong>not</strong> directly collect, store, or process your payment or billing details. Only limited non-financial information (e.g. subscription status: active, expired, trial) is received, solely to grant or revoke access to premium features.
+      </div>
+      <div class="warn-box">
+        <strong>Renewal & Cancellation:</strong> Subscriptions automatically renew unless cancelled at least 24 hours before the end of the current period. You can manage or cancel your subscription at any time through your App Store or Google Play account settings.
+      </div>
+    </div>
+
+    <!-- 4. Third Party Access -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#4361ee" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"/></svg>
+        </div>
+        <h2>Third Party Access</h2>
+      </div>
+      <p>Only aggregated, anonymized data is periodically transmitted to external services to aid the Service Provider in improving the Application and their service. The Application utilizes the following third-party services, each with their own Privacy Policy:</p>
+      <ul class="link-list">
+        <li><a href="https://www.google.com/analytics/terms/" target="_blank" rel="noopener">↗ Google Analytics for Firebase</a></li>
+        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">↗ Google AdMob</a></li>
+        <li><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">↗ Apple App Store</a></li>
+        <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">↗ Google Play</a></li>
+      </ul>
+      <p>The Service Provider may disclose User Provided and Automatically Collected Information:</p>
+      <ol class="disclosure">
+        <li>As required by law, such as to comply with a subpoena, or similar legal process;</li>
+        <li>When they believe in good faith that disclosure is necessary to protect their rights, your safety or the safety of others, investigate fraud, or respond to a government request;</li>
+        <li>With trusted service providers who work on their behalf, do not have an independent use of the information disclosed to them, and have agreed to adhere to the rules set forth in this privacy statement.</li>
+      </ol>
+    </div>
+
+    <!-- 5. Opt-Out -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#4361ee" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/></svg>
+        </div>
+        <h2>Opt-Out Rights</h2>
+      </div>
+      <p>You can stop all collection of information by the Application easily by uninstalling it. You may use the standard uninstall processes available on your mobile device or via the mobile application marketplace.</p>
+      <p>To opt out of personalized advertising, follow the steps described in the <strong>Advertising</strong> section above.</p>
+    </div>
+
+    <!-- 6. Data Retention -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#4361ee" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"/></svg>
+        </div>
+        <h2>Data Retention Policy</h2>
+      </div>
+      <p>The Service Provider will retain User Provided data for as long as you use the Application and for a reasonable time thereafter. If you'd like them to delete User Provided Data, please contact them at <a href="mailto:aliraza0423@gmail.com">aliraza0423@gmail.com</a> and they will respond in a reasonable time.</p>
+    </div>
+
+    <!-- 7. Children -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#4361ee" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg>
+        </div>
+        <h2>Children</h2>
+      </div>
+      <p>The Service Provider does not use the Application to knowingly solicit data from or market to children under the age of 13. The Application does not address anyone under the age of 13.</p>
+      <p>In the case the Service Provider discovers that a child under 13 has provided personal information, it will be immediately deleted from their servers. If you are a parent or guardian and you are aware that your child has provided personal information, please contact <a href="mailto:aliraza0423@gmail.com">aliraza0423@gmail.com</a>.</p>
+    </div>
+
+    <!-- 8. Security -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#4361ee" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+        </div>
+        <h2>Security</h2>
+      </div>
+      <p>The Service Provider is concerned about safeguarding the confidentiality of your information. The Service Provider provides physical, electronic, and procedural safeguards to protect information processed and maintained.</p>
+    </div>
+
+    <!-- 9. Changes -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#4361ee" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+        </div>
+        <h2>Changes</h2>
+      </div>
+      <p>This Privacy Policy may be updated from time to time for any reason. The Service Provider will notify you of any changes by updating this page with the new Privacy Policy. You are advised to consult this Privacy Policy regularly for any changes, as continued use is deemed approval of all changes.</p>
+      <div class="info-box"><strong>Effective date:</strong> April 15, 2026</div>
+    </div>
+
+    <!-- 10. Consent -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#4361ee" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <h2>Your Consent</h2>
+      </div>
+      <p>By using the Application, you are consenting to the processing of your information as set forth in this Privacy Policy now and as amended by us.</p>
+    </div>
+
+    <!-- 11. Contact -->
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#4361ee" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        </div>
+        <h2>Contact Us</h2>
+      </div>
+      <p>If you have any questions regarding privacy while using the Application, or have questions about the practices, please contact the Service Provider:</p>
+      <div class="contact-card">
+        <div class="icon">
+          <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="#e94560" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+        </div>
+        <div>
+          <div class="label">Email</div>
+          <a href="mailto:aliraza0423@gmail.com">aliraza0423@gmail.com</a>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /content -->
+
+  <div class="footer">
+    &copy; 2026 Ali Raza · Enber App · All rights reserved
+  </div>
+
+</div><!-- /card -->
+
+</body>
+</html>
